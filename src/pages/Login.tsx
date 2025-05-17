@@ -15,7 +15,7 @@ export default function Login() {
     e.preventDefault();
     try {
       await login(email, password);
-      navigate('/'); // ou /dashboard
+      navigate('/');
     } catch {
       setError('Credenciais inválidas');
     }
@@ -48,8 +48,22 @@ export default function Login() {
           onChange={e => setPassword(e.target.value)}
         />
 
-        <button type="submit"className="w-full bg-[#eec95e] text-white p-2 rounded hover:bg-[#d9b14f]">
+        <button type="submit" className="w-full bg-[#eec95e] text-white p-2 rounded hover:bg-[#d9b14f]">
             Login
+        </button>
+        <button type="button" 
+            onClick={async () => {
+              setError('');
+              try {
+                await login('manager@mail.com', '123456');
+                navigate('/');
+              } catch {
+                setError('Demo login failed. Please try again later.');
+              } 
+            }}
+          className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-700 transition"
+          >
+          Log in as Demo User
         </button>
       </form>
     </div>

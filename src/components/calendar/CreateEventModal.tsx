@@ -149,7 +149,7 @@ export default function CreateEventModal({ date, onClose, onCreated, editingEven
                     onClick={() => setType(option.value)}
                   >
                     <span className="text-base sm:text-xl mb-0.5 sm:mb-1">{option.icon}</span>
-                    <span className="text-xxs sm:text-xs font-medium">{option.label}</span>
+                    <span className=" sm:text-xs font-medium" style={{fontSize: "10px"}}>{option.label}</span>
                   </button>
                 ))}
               </div>
