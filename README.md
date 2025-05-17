@@ -49,7 +49,7 @@ npm install
 3. Create a `.env` file:
 
 ```env
-VITE_API_URL=http://localhost:3333
+VITE_API_URL=https://teamboard-backend-1.onrender.com
 ```
 
 4. Start the development server:
