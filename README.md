@@ -4,7 +4,7 @@ A calendar-based web application for managing training, matches, and tactical ev
 
 ## 🌐 Live Demo
 
-> [Insert Vercel link here once deployed]
+> https://team-board-frontend.vercel.app
 
 ---
 
